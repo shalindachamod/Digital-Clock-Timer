@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Timer | Shalinda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card clock-card">
+            <h2 class="title">Digital Clock</h2>
+            <div id="clock">00:00:00</div>
+            <p id="date">Loading date...</p>
+        </div>
+
+        <div class="card timer-card">
+            <h2 class="title">Countdown Timer</h2>
+            <div id="timer-display">00:00</div>
+            
+            <div class="inputs">
+                <input type="number" id="minutes" placeholder="Min" min="0">
+                <input type="number" id="seconds" placeholder="Sec" min="0" max="59">
+            </div>
+
+            <div class="controls">
+                <button onclick="startTimer()" id="startBtn">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

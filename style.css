@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0c29;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #00feba;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Clock Styles */
+#clock {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(0, 254, 186, 0.5);
+}
+
+#date {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Timer Styles */
+#timer-display {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #ff007f; /* Neon Pink */
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#startBtn { background: #00feba; color: #1a1a2e; }
+
+button:hover {
+    transform: scale(1.05);
+    background: white;
+    color: black;
+}
+
+/* Mobile Friendly */
+@media (max-width: 480px) {
+    #clock { font-size: 40px; }
+    #timer-display { font-size: 50px; }
+}
